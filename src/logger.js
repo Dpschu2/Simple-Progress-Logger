@@ -10,7 +10,7 @@
  *      showProgressBar: true,      // whether to display a progress bar (for determinate mode)
  *      showLoadingAnimation: true, // whether to display a loading animation (for indeterminate mode)
  *      showEta: true,              // whether to display estimated time remaining (for determinate mode)
- *      barLength: 10               // the length of the progress bar or animation.
+ *      barLength: 20               // the length of the progress bar or animation.
  *      updateThrottle: 50          // the time in milliseconds to update the progress bar.
  *      showAvgTimePerItem: false   // whether to display average time per item when stopping the logger.
  *      fullCharacter: '\u2588',    // the character to use for the filled part of the progress bar.
@@ -46,7 +46,7 @@ class Logger {
     this.showProgressBar = options.showProgressBar ?? true;
     this.showLoadingAnimation = options.showLoadingAnimation ?? true;
     this.showEta = options.showEta ?? true;
-    this.barLength = options.barLength ?? 10;
+    this.barLength = options.barLength ?? 20;
     this.updateThrottle = options.updateThrottle ?? 50;
     this.showAvgTimePerItem = options.showAvgTimePerItem ?? false;
     this.fullCharacter = options.fullCharacter ?? '\u2588';
@@ -234,7 +234,8 @@ class Logger {
       const elapsed = ((Date.now() - this.startTime) / 1000).toFixed(1);
       const avgTimePerItem = this.value > 0 ? (Date.now() - this.startTime) / this.value : 0;
       const avgTimePerItemSeconds = (avgTimePerItem / 1000).toFixed(2);
-      this.stopAnimation(`${this.message} | ${elapsed}s total${this.showAvgTimePerItem ? ` | ${avgTimePerItemSeconds}s avg per item` : ''}`);
+      const itemCount = (this.total !== null ? `${this.value}/${this.total}` : (this.value > 0 ? `${this.value}` : ''));
+      this.stopAnimation(`${this.message}${itemCount ? ` | ${itemCount} processed` : ''} | ${elapsed}s total${this.showAvgTimePerItem ? ` | ${avgTimePerItemSeconds}s avg per item` : ''}`);
     }
     this.restoreConsole();
   }
