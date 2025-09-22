@@ -1,14 +1,14 @@
-# dean-progress-logger
+# simple-progress-logger
 
 A tiny, dependency-free (runtime) terminal progress logger with determinate bars, indeterminate loading animation, and ETA display — extracted from the user's custom implementation and packaged for npm.
 
 ## Install
 
-    npm i dean-progress-logger
+    npm i simple-progress-logger
 
 ## Usage (CommonJS)
 
-    const { Logger } = require('dean-progress-logger');
+    const { Logger } = require('simple-progress-logger');
 
     async function demo() {
         const total = 50;
@@ -24,7 +24,7 @@ A tiny, dependency-free (runtime) terminal progress logger with determinate bars
 
 ## Usage (ESM)
 
-    import { Logger } from 'dean-progress-logger';
+    import { Logger } from 'simple-progress-logger';
 
     const total = 10;
     const log = new Logger({ message: 'Indexing…', total });

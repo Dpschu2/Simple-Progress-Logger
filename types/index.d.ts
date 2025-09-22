@@ -1,4 +1,4 @@
-// TypeScript declarations for dean-progress-logger
+// TypeScript declarations for simple-progress-logger
 // Generated from JSDoc in src/logger.js
 
 export interface LoggerOptions {
