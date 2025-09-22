@@ -1,0 +1,6 @@
+coverage/
+.nyc_output/
+.env
+examples/
+tests/
+src/logger.test.js

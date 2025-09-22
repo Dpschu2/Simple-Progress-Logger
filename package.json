@@ -1,0 +1,45 @@
+{
+  "name": "simple-progress-logger",
+  "version": "1.0.0",
+  "description": "Tiny terminal progress logger with determinate bar, indeterminate animation, and ETA.",
+  "license": "MIT",
+  "author": "Dean Schulz",
+  "type": "commonjs",
+  "main": "index.js",
+  "module": "index.mjs",
+  "types": "types/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./index.js",
+      "import": "./index.mjs",
+      "types": "./types/index.d.ts"
+    }
+  },
+  "files": [
+    "index.js",
+    "index.mjs",
+    "src/",
+    "types/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "keywords": [
+    "simple",
+    "progress",
+    "logger",
+    "cli",
+    "terminal",
+    "progressbar",
+    "eta"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://example.com/your-repo.git"
+  },
+  "bugs": {
+    "url": "https://example.com/your-repo/issues"
+  }
+}
