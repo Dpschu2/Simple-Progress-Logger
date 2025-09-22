@@ -1,6 +1,6 @@
 {
   "name": "simple-progress-logger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tiny terminal progress logger with determinate bar, indeterminate animation, and ETA.",
   "license": "MIT",
   "author": "Dean Schulz",
@@ -37,9 +37,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://example.com/your-repo.git"
+    "url": "https://github.com/Dpschu2/Simple-Progress-Logger.git"
   },
   "bugs": {
-    "url": "https://example.com/your-repo/issues"
+    "url": "https://github.com/Dpschu2/Simple-Progress-Logger/issues"
   }
 }
