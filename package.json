@@ -1,6 +1,6 @@
 {
   "name": "simple-progress-logger",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Tiny terminal progress logger with determinate bar, indeterminate animation, and ETA.",
   "license": "MIT",
   "author": "Dean Schulz",
